@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "live-185"
+version = "0.1.0"
+description = ""
+authors = ["Ricardo Emanuel <r200518@dac.unicamp.br>"]
+readme = "README.md"
+packages = [{include = "live_185"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.100.0"
+uvicorn = {extras = ["standard"], version = "^0.22.0"}
+sqlmodel = "^0.0.8"
+strawberry-graphql = "^0.194.4"
+rich = "^13.4.2"
+typer = "^0.9.0"
+libcst = "^1.0.1"
+
+
+[tool.poetry.group.dev.dependencies]
+httpie = "^3.2.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
